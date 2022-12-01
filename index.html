@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+</head>
+<body>
+	<header>Dynamic Multiplication Table</header>
+	<div class="container" id="tabs">
+		<aside>
+			<div class="controls">
+				<div class="control-input">
+					<div class="text-input">
+						<input placeholder="0" type="text" name="input" id="input-xmin">
+						<input placeholder="0" type="text" name="input" id="input-xmax">
+					</div>
+					<div id="slider-x"></div>
+				</div>
+				<div class="control-input">
+					<div class="text-input">
+						<input placeholder="0" type="text" name="input" id="input-ymin">
+						<input placeholder="0" type="text" name="input" id="input-ymax">
+					</div>
+					<div id="slider-y"></div>
+				</div>
+				<div>
+					<button id="submit">submit</button>
+				</div>
+			</div>
+			<div id="tabs">
+				<ul>
+					<li id="new-tab"><a href="#new">+</a></li>
+				</ul>
+			</div>
+		</aside>
+		<div id="multi-container" class="">
+			<table id="mult-table"></table>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> 
+	<script src="index.js"></script>
+</body>
+</html>

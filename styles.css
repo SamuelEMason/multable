@@ -1,0 +1,117 @@
+body {
+	/* background-color: rgba(113, 4, 0, 0.904); */
+	background-image: url('images/fog.jpg');
+}
+
+header {
+	background-color: rgba(212, 140, 33, 0.071);
+	text-align: center;
+	padding: 25px;
+	margin-bottom: 20px;
+}
+
+.container {
+	display: grid;
+	grid-template-areas: 'aside table table';
+	padding: 0 50px;
+}
+
+.controls {
+	height: fit-content;
+	width: fit-content;
+	padding: 20px;
+	background-color: brown;
+	box-shadow: 5px 5px 5px black;
+	grid-area: aside;
+}
+
+.control-input {
+	padding: 15px;
+}
+
+.text-input {
+	margin-bottom: 10px;
+}
+
+.text-input > input {
+	text-align: center;
+}
+
+#input {
+	display: inline;
+	text-align: center;
+	color: rgb(92, 84, 84);
+	margin-bottom: 15px;
+	width: 232px;
+}
+
+#slider {
+	width: 240px;
+	height: 6px;
+	border: none;
+	position: relative;
+	background-color: blueviolet;
+}
+
+
+#multi-container {
+	overflow-y: scroll;
+	scroll-snap-type: both;
+	scroll-padding-left: 30px;
+	scroll-padding-top: 41px;
+	background-color: rgba(172, 181, 178, 0);
+	border-radius: 10px;
+	width: calc(100vw - 50px);
+	height: calc(100vw - 50px);
+	max-height: 349px;
+	max-width: 690px;
+	height: fit-content;
+	width: fit-content;
+}
+
+#multi-container table tr:nth-child(odd) td:nth-child(odd), tr:nth-child(even) td:nth-child(even) {
+	background-color: rgba(165, 154, 139, 0.271);
+}
+
+#multi-container::-webkit-scrollbar {
+	width: 1em;
+}
+
+#multi-container::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.351);
+  }
+
+#multi-container::-webkit-scrollbar-thumb {
+	background-color: rgba(102, 102, 102, 0.108);
+	outline: 1px solid rgba(30, 16, 16, 0.334);
+  }
+
+#multi-container::-webkit-scrollbar-corner {
+	background-color: rgba(102, 102, 102, 0.132);
+}
+
+#multitable {
+	border-spacing: 0;
+	border-radius: 50%;
+	text-align: center;
+
+}
+
+#multitable th {
+	position: sticky;
+	/* box-shadow: inset 0 0 6px rgba(111, 107, 107, 0.153); */
+	top: 0;
+	background-color: rgb(236, 236, 236);
+	padding: 10px;
+	border: 1px solid #bbbbbb72;
+	padding: 5px;
+	width: 80px;
+}
+
+#multitable td {
+	border: 1px solid #bbbbbb;
+	padding: 5px;
+	width: 80px;
+	min-width: 80px;
+	scroll-snap-align: start;
+}
